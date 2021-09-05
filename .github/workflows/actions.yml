@@ -74,8 +74,8 @@ jobs:
         id: current-time
       
       - name: 'AWS: String replace action'
-          uses: frabert/replace-string-action@master
-          id: format-time
+        uses: frabert/replace-string-action@master
+        id: format-time
           with:
             pattern: '[:\.]+'
             string: "${{ steps.current-time.outputs.time }}"
