@@ -72,7 +72,7 @@ jobs:
       - name: Beanstalk Deploy my app
         uses: einaregilsson/beanstalk-deploy@v4
         with:
-          aws_access_key: ${{secrets.AWS_ACCESS_KEY}}
+          aws_access_key: ${{secrets.AWS_ACCESS_ID}}
           aws_secret_key: ${{secrets.AWS_SECRET_KEY}}
           application_name: docker
           environment_name: docker-env
