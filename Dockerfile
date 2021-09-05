@@ -15,4 +15,5 @@ RUN npm run build
 # build folder <= /home/node/app/build
 
 FROM nginx
+EXPOSE 80
 COPY --from=builder /home/node/app/build /usr/share/nginx/html
